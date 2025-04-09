@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-flow__node {
+  @apply transition-shadow duration-200;
+}
+
+.react-flow__node:hover {
+  @apply shadow-2xl;
+}
+
+.react-flow__edge {
+  @apply !stroke-gray-400;
+}
+
+.react-flow__edge.selected {
+  @apply !stroke-blue-400;
+}
+
+.react-flow__edge.animate-pulse-once {
+  animation: edgePulse 0.5s ease-in-out;
+}
+
+@keyframes edgePulse {
+  0% {
+    stroke: theme('colors.gray.400');
+  }
+  50% {
+    stroke: theme('colors.blue.400');
+  }
+  100% {
+    stroke: theme('colors.gray.400');
+  }
+}
