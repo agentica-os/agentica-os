@@ -22,7 +22,7 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) =
           <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
             <p className="text-blue-200 font-medium">🚧 Alpha Stage Project</p>
             <p className="text-gray-300 mt-2">
-              Agentica is currently in alpha stage. While it's functional, you may encounter bugs or incomplete features.
+              Agentica is currently in alpha stage. While it's functional, you will encounter many bugs or incomplete features.
               We're actively working on improvements and welcome your feedback!
             </p>
           </div>
@@ -38,7 +38,7 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) =
               <div className="flex items-center gap-3">
                 <Github className="w-5 h-5 text-gray-400" />
                 <a 
-                  href="https://github.com/yourusername/agentica" 
+                  href="https://github.com/agentica-os/agentica-os" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
